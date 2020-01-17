@@ -171,7 +171,7 @@ public class AbsoluteMovementCommandsImplementation extends CommandBase
             if (ctx.side == Side.CLIENT)
                 mainThread = Minecraft.getMinecraft();
             else
-                mainThread = (WorldServer)ctx.getServerHandler().playerEntity.world;
+                mainThread = (WorldServer)ctx.getServerHandler().player.world;
             mainThread.addScheduledTask(new Runnable()
             {
                 @Override
@@ -189,7 +189,7 @@ public class AbsoluteMovementCommandsImplementation extends CommandBase
                     if (!message.setPitch)
                         enumset.add(SPacketPlayerPosLook.EnumFlags.X_ROT);
 
-                    EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+                    EntityPlayerMP player = ctx.getServerHandler().player;
                     player.dismountRidingEntity();
                     player.connection.setPlayerLocation(message.x, message.y, message.z, message.yaw, message.pitch, enumset);
                     player.setRotationYawHead(message.yaw);

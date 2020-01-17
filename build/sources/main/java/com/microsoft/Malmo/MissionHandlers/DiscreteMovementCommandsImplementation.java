@@ -120,9 +120,9 @@ public class DiscreteMovementCommandsImplementation extends CommandBase implemen
             ByteBufUtils.writeItemStack(buf, this.itemStack);
             buf.writeInt(this.face.ordinal());
             buf.writeBoolean(this.standOnPlacedBlock);
-            buf.writeDouble(this.hitVec.xCoord);
-            buf.writeDouble(this.hitVec.yCoord);
-            buf.writeDouble(this.hitVec.zCoord);
+            buf.writeDouble(this.hitVec.x);
+            buf.writeDouble(this.hitVec.y);
+            buf.writeDouble(this.hitVec.z);
         }
     }
 
@@ -135,13 +135,13 @@ public class DiscreteMovementCommandsImplementation extends CommandBase implemen
             if (ctx.side == Side.CLIENT)
                 return null;    // Not interested.
 
-            mainThread = (WorldServer)ctx.getServerHandler().playerEntity.world;
+            mainThread = (WorldServer)ctx.getServerHandler().player.world;
             mainThread.addScheduledTask(new Runnable()
             {
                 @Override
                 public void run()
                 {
-                    EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+                    EntityPlayerMP player = ctx.getServerHandler().player;
                     PlayerInteractEvent event = new PlayerInteractEvent.RightClickBlock(player, EnumHand.MAIN_HAND, message.pos, message.face, message.hitVec);
                     MinecraftForge.EVENT_BUS.post(event);
                     if (!event.isCanceled()) {
@@ -208,9 +208,9 @@ public class DiscreteMovementCommandsImplementation extends CommandBase implemen
             buf.writeInt(this.pos.getY());
             buf.writeInt(this.pos.getZ());
             buf.writeInt(this.face.ordinal());
-            buf.writeDouble(this.hitVec.xCoord);
-            buf.writeDouble(this.hitVec.yCoord);
-            buf.writeDouble(this.hitVec.zCoord);
+            buf.writeDouble(this.hitVec.x);
+            buf.writeDouble(this.hitVec.y);
+            buf.writeDouble(this.hitVec.z);
         }
     }
 
@@ -223,13 +223,13 @@ public class DiscreteMovementCommandsImplementation extends CommandBase implemen
             if (ctx.side == Side.CLIENT)
                 return null;    // Not interested.
 
-            mainThread = (WorldServer)ctx.getServerHandler().playerEntity.world;
+            mainThread = (WorldServer)ctx.getServerHandler().player.world;
             mainThread.addScheduledTask(new Runnable()
             {
                 @Override
                 public void run()
                 {
-                    EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+                    EntityPlayerMP player = ctx.getServerHandler().player;
                     IBlockState iblockstate = player.world.getBlockState(message.pos);
                     Block block = iblockstate.getBlock();
                     if (iblockstate.getMaterial() != Material.AIR)
@@ -526,7 +526,7 @@ public class DiscreteMovementCommandsImplementation extends CommandBase implemen
             Vec3d eyePos = viewer.getPositionEyes(partialTicks);
             Vec3d lookVec = viewer.getLook(partialTicks);
             int yOffset = 1;    // For the jump
-            Vec3d searchVec = eyePos.addVector(lookVec.xCoord * blockReach, yOffset + lookVec.yCoord * blockReach, lookVec.zCoord * blockReach);
+            Vec3d searchVec = eyePos.addVector(lookVec.x * blockReach, yOffset + lookVec.y * blockReach, lookVec.z * blockReach);
             mop = Minecraft.getMinecraft().world.rayTraceBlocks(eyePos, searchVec, false, false, false);
         }
         return mop;

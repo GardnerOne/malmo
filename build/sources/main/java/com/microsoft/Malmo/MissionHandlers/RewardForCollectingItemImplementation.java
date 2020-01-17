@@ -100,7 +100,7 @@ public class RewardForCollectingItemImplementation extends RewardForItemBase imp
         if (event.getItem() != null && event.getEntityPlayer() instanceof EntityPlayerMP )
         {
             // This event is received on the server side, so we need to pass it to the client.
-            sendItemStackToClient((EntityPlayerMP)event.getEntityPlayer(), MalmoMessageType.SERVER_COLLECTITEM, event.getItem().getEntityItem());
+            sendItemStackToClient((EntityPlayerMP)event.getEntityPlayer(), MalmoMessageType.SERVER_COLLECTITEM, event.getItem().getItem());
         }
     }
 

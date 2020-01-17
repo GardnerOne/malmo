@@ -275,7 +275,7 @@ public class ScreenHelper
 
     public static void drawText(String s, int x, int y, int colour)
     {
-        FontRenderer frendo = Minecraft.getMinecraft().fontRendererObj;
+        FontRenderer frendo = Minecraft.getMinecraft().fontRenderer;
         frendo.drawStringWithShadow(s, x, y, colour);
     }
 

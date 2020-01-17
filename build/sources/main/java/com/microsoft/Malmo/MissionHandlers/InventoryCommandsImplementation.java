@@ -150,8 +150,8 @@ public class InventoryCommandsImplementation extends CommandGroup
         @Override
         public InventoryChangeMessage onMessage(final InventoryMessage message, MessageContext ctx)
         {
-            final EntityPlayerMP player = ctx.getServerHandler().playerEntity;
-            IThreadListener mainThread = (WorldServer)ctx.getServerHandler().playerEntity.world;
+            final EntityPlayerMP player = ctx.getServerHandler().player;
+            IThreadListener mainThread = (WorldServer)ctx.getServerHandler().player.world;
             mainThread.addScheduledTask(new Runnable()
             {
                 @Override

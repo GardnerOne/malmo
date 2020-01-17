@@ -127,14 +127,14 @@ public class AnimationDecoratorImplementation extends HandlerBase implements IWo
         if (this.params.getLinear() != null)
         {
             Linear linear = this.params.getLinear();
-            double dx = this.velocity.xCoord;
-            double dy = this.velocity.yCoord;
-            double dz = this.velocity.zCoord;
-            if (this.drawContext.getMax().xCoord + dx > linear.getCanvasBounds().getMax().getX() + 1.0 || this.drawContext.getMin().xCoord + dx < linear.getCanvasBounds().getMin().getX())
+            double dx = this.velocity.x;
+            double dy = this.velocity.y;
+            double dz = this.velocity.z;
+            if (this.drawContext.getMax().x + dx > linear.getCanvasBounds().getMax().getX() + 1.0 || this.drawContext.getMin().x + dx < linear.getCanvasBounds().getMin().getX())
                 dx = -dx;
-            if (this.drawContext.getMax().yCoord + dy > linear.getCanvasBounds().getMax().getY() + 1.0 || this.drawContext.getMin().yCoord + dy < linear.getCanvasBounds().getMin().getY())
+            if (this.drawContext.getMax().y + dy > linear.getCanvasBounds().getMax().getY() + 1.0 || this.drawContext.getMin().y + dy < linear.getCanvasBounds().getMin().getY())
                 dy = -dy;
-            if (this.drawContext.getMax().zCoord + dz > linear.getCanvasBounds().getMax().getZ() + 1.0 || this.drawContext.getMin().zCoord + dz < linear.getCanvasBounds().getMin().getZ())
+            if (this.drawContext.getMax().z + dz > linear.getCanvasBounds().getMax().getZ() + 1.0 || this.drawContext.getMin().z + dz < linear.getCanvasBounds().getMin().getZ())
                 dz = -dz;
             this.velocity = new Vec3d(dx, dy, dz);
             this.origin = this.origin.add(this.velocity);

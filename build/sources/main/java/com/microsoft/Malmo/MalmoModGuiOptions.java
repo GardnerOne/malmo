@@ -73,11 +73,11 @@ public class MalmoModGuiOptions implements IModGuiFactory
         {
             super.drawScreen(mouseX, mouseY, partialTicks);
             if (AddressHelper.getMissionControlPort() != -1)
-                this.drawCenteredString(this.fontRendererObj, "Mission Control Port: " + AddressHelper.getMissionControlPort(), this.width / 2, this.height / 2, 0x44ff44);
+                this.drawCenteredString(this.fontRenderer, "Mission Control Port: " + AddressHelper.getMissionControlPort(), this.width / 2, this.height / 2, 0x44ff44);
             else
             {
-                this.drawCenteredString(this.fontRendererObj, "NO MISSION CONTROL SOCKET - is there a port collision?", this.width / 2, this.height / 2, 0xff0000);
-                this.drawCenteredString(this.fontRendererObj, "Set the portOverride to 0 to let the system allocate a free port dynamically.", this.width / 2, this.height / 2 + this.fontRendererObj.FONT_HEIGHT, 0xffffff);
+                this.drawCenteredString(this.fontRenderer, "NO MISSION CONTROL SOCKET - is there a port collision?", this.width / 2, this.height / 2, 0xff0000);
+                this.drawCenteredString(this.fontRenderer, "Set the portOverride to 0 to let the system allocate a free port dynamically.", this.width / 2, this.height / 2 + this.fontRenderer.FONT_HEIGHT, 0xffffff);
             }
         }
 

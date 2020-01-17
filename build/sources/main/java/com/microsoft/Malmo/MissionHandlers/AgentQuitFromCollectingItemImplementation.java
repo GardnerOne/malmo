@@ -83,9 +83,9 @@ public class AgentQuitFromCollectingItemImplementation extends HandlerBase imple
     @SubscribeEvent
     public void onPickupItem(EntityItemPickupEvent event)
     {
-        if (event.getItem() != null && event.getItem().getEntityItem() != null)
+        if (event.getItem() != null && event.getItem().getItem() != null)
         {
-            ItemStack stack = event.getItem().getEntityItem();
+            ItemStack stack = event.getItem().getItem();
             checkForMatch(stack);
         }
     }

@@ -67,7 +67,7 @@ public class RewardForDamagingEntityImplementation extends RewardBase implements
     @SubscribeEvent
     public void onLivingAttackEvent(LivingAttackEvent event)
     {
-        if (event.getEntity() == null || event.getSource().getEntity() != Minecraft.getMinecraft().player)
+        if (event.getEntity() == null || event.getSource().getImmediateSource() != Minecraft.getMinecraft().player)
             return;
         synchronized (this.damages)
         {

@@ -809,7 +809,7 @@ public class ServerStateMachine extends StateMachine
                 {
                     player.markPlayerActive();
                     player = FMLCommonHandler.instance().getMinecraftServerInstance().getPlayerList().recreatePlayerEntity(player, player.dimension, false);
-                    player.connection.playerEntity = player;
+                    player.connection.player = player;
                 }
 
                 // Reset their food and health:

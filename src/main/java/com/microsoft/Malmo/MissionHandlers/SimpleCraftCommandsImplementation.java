@@ -71,7 +71,7 @@ public class SimpleCraftCommandsImplementation extends CommandBase
         @Override
         public IMessage onMessage(CraftMessage message, MessageContext ctx)
         {
-            EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+            EntityPlayerMP player = ctx.getServerHandler().player;
             // Try crafting recipes first:
             List<IRecipe> matching_recipes = CraftingHelper.getRecipesForRequestedOutput(message.parameters);
             for (IRecipe recipe : matching_recipes)

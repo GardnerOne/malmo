@@ -91,7 +91,7 @@ public class ObservationFromRayImplementation extends HandlerBase implements IOb
         float depth = 50;   // Hard-coded for now - in future will be parameterised via the XML.
         Vec3d eyePos = viewer.getPositionEyes(partialTicks);
         Vec3d lookVec = viewer.getLook(partialTicks);
-        Vec3d searchVec = eyePos.addVector(lookVec.xCoord * depth, lookVec.yCoord * depth, lookVec.zCoord * depth);
+        Vec3d searchVec = eyePos.addVector(lookVec.x * depth, lookVec.y * depth, lookVec.z * depth);
         RayTraceResult mop = Minecraft.getMinecraft().world.rayTraceBlocks(eyePos, searchVec, false, false, false);
         RayTraceResult mopEnt = findEntity(eyePos, lookVec, depth, mop, true);
         if (mopEnt != null)
@@ -110,9 +110,9 @@ public class ObservationFromRayImplementation extends HandlerBase implements IOb
         {
             // We're looking at a block - send block data:
             jsonMop.addProperty("hitType", "block");
-            jsonMop.addProperty("x", mop.hitVec.xCoord);
-            jsonMop.addProperty("y", mop.hitVec.yCoord);
-            jsonMop.addProperty("z", mop.hitVec.zCoord);
+            jsonMop.addProperty("x", mop.hitVec.x);
+            jsonMop.addProperty("y", mop.hitVec.y);
+            jsonMop.addProperty("z", mop.hitVec.z);
             IBlockState state = Minecraft.getMinecraft().world.getBlockState(mop.getBlockPos());
             List<IProperty> extraProperties = new ArrayList<IProperty>();
             DrawBlock db = MinecraftTypeHelper.getDrawBlockFromBlockState(state, extraProperties);
@@ -179,7 +179,7 @@ public class ObservationFromRayImplementation extends HandlerBase implements IOb
                 String hitType = "entity";
                 if (entity instanceof EntityItem)
                 {
-                    ItemStack is = ((EntityItem)entity).getEntityItem();
+                    ItemStack is = ((EntityItem)entity).getItem();
                     DrawItem di = MinecraftTypeHelper.getDrawItemFromItemStack(is);
                     if (di.getColour() != null)
                         jsonMop.addProperty("colour", di.getColour().value());
@@ -203,12 +203,12 @@ public class ObservationFromRayImplementation extends HandlerBase implements IOb
         // Based on code in EntityRenderer.getMouseOver()
         if (mop != null)
             depth = mop.hitVec.distanceTo(eyePos);
-        Vec3d searchVec = eyePos.addVector(lookVec.xCoord * depth, lookVec.yCoord * depth, lookVec.zCoord * depth);
+        Vec3d searchVec = eyePos.addVector(lookVec.x * depth, lookVec.y * depth, lookVec.z * depth);
         Entity pointedEntity = null;
 
         Vec3d hitVec = null;
         Entity viewer = Minecraft.getMinecraft().player;
-        List<?> list = Minecraft.getMinecraft().world.getEntitiesWithinAABBExcludingEntity(viewer, viewer.getEntityBoundingBox().addCoord(lookVec.xCoord * depth, lookVec.yCoord * depth, lookVec.zCoord * depth).expand(1.0, 1.0, 1.0));
+        List<?> list = Minecraft.getMinecraft().world.getEntitiesWithinAABBExcludingEntity(viewer, viewer.getEntityBoundingBox().expand(lookVec.x * depth, lookVec.y * depth, lookVec.z * depth).expand(1.0, 1.0, 1.0));
         double distance = depth;
 
         for (int i = 0; i < list.size(); ++i)
@@ -219,7 +219,7 @@ public class ObservationFromRayImplementation extends HandlerBase implements IOb
                 float border = entity.getCollisionBorderSize();
                 AxisAlignedBB axisalignedbb = entity.getEntityBoundingBox().expand((double)border, (double)border, (double)border);
                 RayTraceResult movingobjectposition = axisalignedbb.calculateIntercept(eyePos, searchVec);
-                if (axisalignedbb.isVecInside(eyePos))
+                if (axisalignedbb.contains(eyePos))
                 {
                     // If entity is right inside our head?
                     if (distance >= 0)

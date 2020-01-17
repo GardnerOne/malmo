@@ -1,258 +1,130 @@
-[15:22:35] [Client thread/INFO]: Setting user: Player540
-[15:22:38] [Client thread/WARN]: Skipping bad option: lastServer:
-[15:22:38] [Client thread/INFO]: LWJGL Version: 2.9.2
-[15:22:38] [Client thread/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
-[15:22:38] [Client thread/INFO]: [STDOUT]: MALMO: Found GlStateManager, attempting to transform it
-[15:22:38] [Client thread/INFO]: [STDOUT]: MALMO: Found GlStateManager.bindTexture() method, attempting to transform it
-[15:22:38] [Client thread/INFO]: [STDOUT]: MALMO: Hooked into call to GlStateManager.bindTexture()
-[15:22:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Microsoft Malmo Mod
-[15:22:40] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:40] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:40] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:40] [Client thread/INFO]: [STDOUT]: Testing schemas against internal version number: 0.37
-[15:22:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:22:42] [Thread-5/INFO]: Initializing LWJGL OpenAL
-[15:22:42] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:22:42] [Thread-5/INFO]: OpenAL initialized.
-[15:22:42] [Sound Library Loader/INFO]: Sound engine started
-[15:22:43] [Client thread/INFO]: Created: 16x16 textures-atlas
-[15:22:44] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_MOD_READY
-[15:22:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Microsoft Malmo Mod
-[15:22:44] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:44] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:44] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
-[15:22:45] [Client thread/INFO]: SoundSystem shutting down...
-[15:22:45] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[15:22:45] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[15:22:46] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[15:22:46] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[15:22:46] [Thread-7/INFO]: OpenAL initialized.
-[15:22:46] [Sound Library Loader/INFO]: Sound engine started
-[15:22:47] [Client thread/INFO]: Created: 512x512 textures-atlas
-[15:22:48] [Client thread/WARN]: Skipping bad option: lastServer:
-[15:22:48] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_MOD_READY
-[15:22:48] [Thread-9/INFO]: [STDOUT]: INFO: ->mcp(0) Listening for messages on port 10000
-[15:22:48] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
-[15:22:48] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
-[15:22:49] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[15:24:44] [Thread-11/INFO]: [STDOUT]: Received from localhost:MALMO_REQUEST_CLIENT:0.37.0:20000:5299ecfc-3874-11ea-ab2a-8c8590cfa739
-[15:24:44] [Thread-11/INFO]: [STDOUT]: ==== RES:  - -1579188284151
-[15:24:44] [Thread-11/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:24:44] [Thread-13/INFO]: [STDOUT]: Received from localhost:<?xml version="1.0" encoding="utf-8"?><MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>Defaut Mission</Summary></About><ServerSection><ServerHandlers><FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1"/><ServerQuitFromTimeUp timeLimitMs="10000"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection><Name>A default agent</Name><AgentStart/><AgentHandlers><ObservationFromFullStats/><ContinuousMovementCommands/><VideoProducer><Width>320</Width><Height>240</Height></VideoProducer><RewardForReachingPosition><Marker x="19.5" y="0" z="19.5" reward="100" tolerance="1.10000002"/></RewardForReachingPosition></AgentHandlers></AgentSection></Mission><ExperimentUID>5299ecfc-3874-11ea-ab2a-8c8590cfa739</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>10000</ClientMissionContro
-[15:24:44] [Thread-13/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:24:44] [Client thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:24:44] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
-[15:24:44] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
-[15:24:44] [Thread-14/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10689
-[15:24:45] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
-[15:24:45] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
-[15:24:45] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
-[15:24:45] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
-[15:24:45] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
-[15:24:45] [Server thread/INFO]: Generating keypair
-[15:24:46] [Server thread/WARN]: Unable to find spawn biome
-[15:24:48] [Server thread/INFO]: Preparing start region for level 0
-[15:24:49] [Server thread/INFO]: Preparing spawn area: 49%
-[15:24:50] [Server thread/INFO]: Preparing spawn area: 89%
-[15:24:51] [Server thread/INFO]: Changing view distance to 6, from 10
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
-[15:24:51] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
-[15:24:51] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
-[15:24:51] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
-[15:24:51] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
-[15:24:51] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
-[15:24:51] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
-[15:24:51] [Server thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:24:51] [Server thread/INFO]: Received mission: §9Defaut Mission
-[15:24:51] [Server thread/INFO]: Source: §alocalhost
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
-[15:24:51] [Server thread/INFO]: A default agent[local:E:3ec20383] logged in with entity id 0 at (-774.5, 227.0, -620.5)
-[15:24:51] [Server thread/INFO]: A default agent joined the game
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:24:51] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:24:51] [Server thread/INFO]: [STDOUT]: Experiment requires: 
-[15:24:51] [Server thread/INFO]: [STDOUT]: >>>> A default agent
-[15:24:52] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - A default agent
-[15:24:53] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
-[15:24:53] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
-[15:24:53] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
-[15:24:53] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
-[15:24:53] [Client thread/INFO]: [STDOUT]: Resized the window
-[15:24:53] [Client thread/INFO]: [CHAT] §l10...
-[15:24:54] [Client thread/INFO]: [CHAT] §l9...
-[15:24:55] [Client thread/INFO]: [CHAT] §l8...
-[15:24:56] [Client thread/INFO]: [CHAT] §l7...
-[15:24:57] [Client thread/INFO]: [CHAT] §l6...
-[15:24:58] [Client thread/INFO]: [CHAT] §c§l5...
-[15:24:59] [Client thread/INFO]: [CHAT] §c§l4...
-[15:25:00] [Client thread/INFO]: [CHAT] §c§l3...
-[15:25:01] [Client thread/INFO]: [CHAT] §c§l2...
-[15:25:02] [Client thread/INFO]: [CHAT] §c§l1...
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_QUIT
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_QUIT
-[15:25:03] [Client thread/INFO]: [CHAT] §c§l0...
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT request state: MISSION_ENDED
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT enter state: MISSION_ENDED
-[15:25:03] [Client thread/INFO]: [STDOUT]: Sending mission ended message to localhost:10649.
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_MISSION_END
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_MISSION_END
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER request state: CLEAN_UP
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER enter state: CLEAN_UP
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
-[15:25:03] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
-[15:25:03] [Client thread/INFO]: [STDOUT]: JETTISONING 0 COMMANDS
-[15:25:03] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
-[15:25:06] [Server thread/INFO]: Saving and pausing game...
-[15:25:06] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:25:07] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:25:07] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:25:21] [Server thread/INFO]: Saving and pausing game...
-[15:25:21] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:25:21] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:25:21] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:25:24] [Thread-20/INFO]: [STDOUT]: Received from localhost:MALMO_REQUEST_CLIENT:0.37.0:20000:6ab5b4f6-3874-11ea-a74f-8c8590cfa739
-[15:25:24] [Thread-20/INFO]: [STDOUT]: ==== RES:  - -20441
-[15:25:24] [Thread-20/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:25:24] [Thread-22/INFO]: [STDOUT]: Received from localhost:<?xml version="1.0" encoding="utf-8"?><MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>Defaut Mission</Summary></About><ServerSection><ServerHandlers><FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1"/><ServerQuitFromTimeUp timeLimitMs="10000"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection><Name>A default agent</Name><AgentStart/><AgentHandlers><ObservationFromFullStats/><ContinuousMovementCommands/><VideoProducer><Width>320</Width><Height>240</Height></VideoProducer><RewardForReachingPosition><Marker x="19.5" y="0" z="19.5" reward="100" tolerance="1.10000002"/></RewardForReachingPosition></AgentHandlers></AgentSection></Mission><ExperimentUID>6ab5b4f6-3874-11ea-a74f-8c8590cfa739</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>10000</ClientMissionContro
-[15:25:24] [Thread-22/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:25:24] [Client thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
-[15:25:24] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
-[15:25:24] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - A default agent
-[15:25:24] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through queue.
-[15:25:24] [Server thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:25:24] [Server thread/INFO]: Received mission: §9Defaut Mission
-[15:25:24] [Server thread/INFO]: Source: §alocalhost
-[15:25:24] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
-[15:25:24] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
-[15:25:24] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:25:24] [Client thread/INFO]: [CHAT] Received mission: §9Defaut Mission
-[15:25:24] [Client thread/INFO]: [CHAT] Source: §alocalhost
-[15:25:24] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:25:24] [Server thread/INFO]: [STDOUT]: Experiment requires: 
-[15:25:24] [Server thread/INFO]: [STDOUT]: >>>> A default agent
-[15:25:24] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - A default agent
-[15:25:25] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
-[15:25:25] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
-[15:25:25] [Client thread/INFO]: [STDOUT]: Resized the window
-[15:25:25] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
-[15:25:25] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
-[15:25:25] [Client thread/INFO]: [CHAT] §l10...
-[15:25:26] [Client thread/INFO]: [CHAT] §l9...
-[15:25:27] [Client thread/INFO]: [CHAT] §l8...
-[15:25:28] [Client thread/INFO]: [CHAT] §l7...
-[15:25:29] [Client thread/INFO]: [CHAT] §l6...
-[15:25:30] [Client thread/INFO]: [CHAT] §c§l5...
-[15:25:31] [Client thread/INFO]: [CHAT] §c§l4...
-[15:25:32] [Client thread/INFO]: [CHAT] §c§l3...
-[15:25:33] [Client thread/INFO]: [CHAT] §c§l2...
-[15:25:34] [Client thread/INFO]: [CHAT] §c§l1...
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_QUIT
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_QUIT
-[15:25:35] [Client thread/INFO]: [CHAT] §c§l0...
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT request state: MISSION_ENDED
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT enter state: MISSION_ENDED
-[15:25:35] [Client thread/INFO]: [STDOUT]: Sending mission ended message to localhost:10759.
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_MISSION_END
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_MISSION_END
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER request state: CLEAN_UP
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER enter state: CLEAN_UP
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
-[15:25:35] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
-[15:25:35] [Client thread/INFO]: [STDOUT]: JETTISONING 2 COMMANDS
-[15:25:35] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
-[15:25:37] [Server thread/INFO]: Saving and pausing game...
-[15:25:37] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:25:37] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:25:37] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:26:32] [Server thread/INFO]: Saving and pausing game...
-[15:26:32] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:26:32] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:26:32] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:27:01] [Thread-26/INFO]: [STDOUT]: Received from localhost:MALMO_REQUEST_CLIENT:0.37.0:20000:a4b58adc-3874-11ea-bcec-8c8590cfa739
-[15:27:01] [Thread-26/INFO]: [STDOUT]: ==== RES:  - -77310
-[15:27:01] [Thread-26/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:27:01] [Thread-28/INFO]: [STDOUT]: Received from localhost:<?xml version="1.0" encoding="utf-8"?><MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>Defaut Mission</Summary></About><ServerSection><ServerHandlers><FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1"/><ServerQuitFromTimeUp timeLimitMs="10000"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection><Name>A default agent</Name><AgentStart/><AgentHandlers><ObservationFromFullStats/><ContinuousMovementCommands/><VideoProducer><Width>320</Width><Height>240</Height></VideoProducer><RewardForReachingPosition><Marker x="19.5" y="0" z="19.5" reward="100" tolerance="1.10000002"/></RewardForReachingPosition></AgentHandlers></AgentSection></Mission><ExperimentUID>a4b58adc-3874-11ea-bcec-8c8590cfa739</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>10000</ClientMissionContro
-[15:27:01] [Thread-28/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
-[15:27:01] [Client thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
-[15:27:01] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
-[15:27:01] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - A default agent
-[15:27:02] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through queue.
-[15:27:02] [Server thread/INFO]: [STDOUT]: Mission received: Defaut Mission
-[15:27:02] [Server thread/INFO]: Received mission: §9Defaut Mission
-[15:27:02] [Server thread/INFO]: Source: §alocalhost
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
-[15:27:02] [Client thread/INFO]: [CHAT] Received mission: §9Defaut Mission
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
-[15:27:02] [Server thread/INFO]: [STDOUT]: Experiment requires: 
-[15:27:02] [Server thread/INFO]: [STDOUT]: >>>> A default agent
-[15:27:02] [Client thread/INFO]: [CHAT] Source: §alocalhost
-[15:27:02] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - A default agent
-[15:27:02] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
-[15:27:02] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
-[15:27:02] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
-[15:27:02] [Client thread/INFO]: [STDOUT]: Resized the window
-[15:27:02] [Client thread/INFO]: [CHAT] §l10...
-[15:27:02] [Client thread/INFO]: [STDOUT]: Resized the window
-[15:27:03] [Client thread/INFO]: [CHAT] §l9...
-[15:27:04] [Client thread/INFO]: [CHAT] §l8...
-[15:27:05] [Client thread/INFO]: [CHAT] §l7...
-[15:27:06] [Client thread/INFO]: [CHAT] §l6...
-[15:27:07] [Client thread/INFO]: [CHAT] §c§l5...
-[15:27:08] [Client thread/INFO]: [CHAT] §c§l4...
-[15:27:09] [Client thread/INFO]: [CHAT] §c§l3...
-[15:27:10] [Client thread/INFO]: [CHAT] §c§l2...
-[15:27:11] [Client thread/INFO]: [CHAT] §c§l1...
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_QUIT
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_QUIT
-[15:27:12] [Client thread/INFO]: [CHAT] §c§l0...
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT request state: MISSION_ENDED
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT enter state: MISSION_ENDED
-[15:27:12] [Client thread/INFO]: [STDOUT]: Sending mission ended message to localhost:10167.
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_MISSION_END
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_MISSION_END
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER request state: CLEAN_UP
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER enter state: CLEAN_UP
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
-[15:27:12] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
-[15:27:12] [Client thread/INFO]: [STDOUT]: JETTISONING 0 COMMANDS
-[15:27:12] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
-[15:27:20] [Server thread/INFO]: Saving and pausing game...
-[15:27:20] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:27:20] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:27:20] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:27:24] [Server thread/INFO]: Saving and pausing game...
-[15:27:24] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:27:24] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:27:24] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:27:34] [Server thread/INFO]: Stopping server
-[15:27:34] [Server thread/INFO]: Saving players
-[15:27:34] [Server thread/INFO]: A default agent lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
-[15:27:34] [Server thread/INFO]: A default agent left the game
-[15:27:34] [Server thread/INFO]: Stopping singleplayer server as player logged out
-[15:27:34] [Server thread/INFO]: Saving worlds
-[15:27:34] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Overworld
-[15:27:34] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/Nether
-[15:27:34] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9'/The End
-[15:27:35] [Client thread/INFO]: Stopping!
-[15:27:35] [Client thread/INFO]: SoundSystem shutting down...
-[15:27:35] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:06:16] [Client thread/INFO]: Setting user: Player633
+[11:06:20] [Client thread/WARN]: Skipping bad option: lastServer:
+[11:06:20] [Client thread/INFO]: LWJGL Version: 2.9.2
+[11:06:21] [Client thread/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
+[11:06:21] [Client thread/INFO]: [STDOUT]: MALMO: Found GlStateManager, attempting to transform it
+[11:06:21] [Client thread/INFO]: [STDOUT]: MALMO: Found GlStateManager.bindTexture() method, attempting to transform it
+[11:06:21] [Client thread/INFO]: [STDOUT]: MALMO: Hooked into call to GlStateManager.bindTexture()
+[11:06:23] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Microsoft Malmo Mod
+[11:06:23] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:23] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:23] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:24] [Client thread/INFO]: [STDOUT]: Testing schemas against internal version number: 0.37
+[11:06:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:06:26] [Thread-6/INFO]: Initializing LWJGL OpenAL
+[11:06:26] [Thread-6/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:06:26] [Thread-6/INFO]: OpenAL initialized.
+[11:06:26] [Sound Library Loader/INFO]: Sound engine started
+[11:06:28] [Client thread/INFO]: Created: 16x16 textures-atlas
+[11:06:29] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_MOD_READY
+[11:06:29] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Microsoft Malmo Mod
+[11:06:29] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:29] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:29] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: MalmoMod in /Users/gardnerone/dev/minecraftmods/malmo/Minecraft/build/libs/gardnerone-1.0.jar
+[11:06:30] [Client thread/INFO]: SoundSystem shutting down...
+[11:06:30] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:06:30] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:06:30] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:06:30] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:06:30] [Thread-8/INFO]: OpenAL initialized.
+[11:06:31] [Sound Library Loader/INFO]: Sound engine started
+[11:06:32] [Client thread/INFO]: Created: 512x512 textures-atlas
+[11:06:33] [Client thread/WARN]: Skipping bad option: lastServer:
+[11:06:33] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_MOD_READY
+[11:06:33] [Thread-10/INFO]: [STDOUT]: INFO: ->mcp(0) Listening for messages on port 10000
+[11:06:33] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
+[11:06:33] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
+[11:06:34] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[11:09:51] [Thread-12/INFO]: [STDOUT]: Received from localhost:MALMO_REQUEST_CLIENT:0.37.0:20000:
+[11:09:51] [Thread-12/INFO]: [STDOUT]: ==== RES:  - -1579259391038
+[11:09:51] [Thread-12/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[11:09:51] [Thread-14/INFO]: [STDOUT]: Received from localhost:<?xml version="1.0" encoding="utf-8"?><MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission>                      <About>          <Summary>Mind your step! Moving around an area to find a goal or get out of it</Summary></About><ServerSection>                <ServerInitialConditions>                                          <Time>                                            <StartTime>6000</StartTime><AllowPassageOfTime>false</AllowPassageOfTime></Time><Weather>clear</Weather><AllowSpawning>false</AllowSpawning></ServerInitialConditions><ServerHandlers>                                              <FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1"/><DrawingDecorator>                            <DrawCuboid colour="PINK" type="stained_glass" x1="-21" x2="21" y1="226" y2="226" z1="-21" z2="21"/><DrawCuboid type="emerald_block" x1="-20" x2="20" y1="226" y2="226" z1="-20" z2="20"/></DrawingDecorato
+[11:09:51] [Thread-14/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[11:09:51] [Client thread/INFO]: [STDOUT]: Mission received: Mind your step! Moving around an area to find a goal or get out of it
+[11:09:51] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[11:09:51] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[11:09:51] [Thread-15/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10506
+[11:09:53] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[11:09:53] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[11:09:53] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[11:09:53] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[11:09:54] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[11:09:54] [Server thread/INFO]: Generating keypair
+[11:09:54] [Server thread/WARN]: Unable to find spawn biome
+[11:09:57] [Server thread/INFO]: Preparing start region for level 0
+[11:09:58] [Server thread/INFO]: Preparing spawn area: 38%
+[11:09:59] [Server thread/INFO]: Preparing spawn area: 74%
+[11:10:00] [Server thread/INFO]: Changing view distance to 6, from 10
+[11:10:00] [Client thread/INFO]: Deleting level TEMP_10000_639fdb3a-7787-4f6c-b82a-848e5d44c6b9
+[11:10:00] [Client thread/INFO]: Attempt 1...
+[11:10:00] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[11:10:00] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[11:10:00] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[11:10:00] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Attempting to transform MinecraftServer
+[11:10:00] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[11:10:00] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[11:10:01] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[11:10:01] [Server thread/INFO]: [STDOUT]: Mission received: Mind your step! Moving around an area to find a goal or get out of it
+[11:10:01] [Server thread/INFO]: Received mission: §9Mind your step! Moving around an area to find a goal or get out of it
+[11:10:01] [Server thread/INFO]: Source: §alocalhost
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[11:10:01] [Server thread/INFO]: The Hungry Caterpillar[local:E:7a803834] logged in with entity id 0 at (-369.5, 227.0, -793.5)
+[11:10:01] [Server thread/INFO]: The Hungry Caterpillar joined the game
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[11:10:01] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[11:10:01] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[11:10:01] [Server thread/INFO]: [STDOUT]: >>>> The Hungry Caterpillar
+[11:10:02] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - The Hungry Caterpillar
+[11:10:02] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[11:10:02] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[11:10:02] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[11:10:02] [Client thread/INFO]: [STDOUT]: Resized the window
+[11:10:02] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[11:10:02] [Client thread/INFO]: [CHAT] §l15...
+[11:10:03] [Client thread/INFO]: [CHAT] §l14...
+[11:10:04] [Client thread/INFO]: [CHAT] §l13...
+[11:10:05] [Client thread/INFO]: [CHAT] §l12...
+[11:10:06] [Client thread/INFO]: [CHAT] §l11...
+[11:10:07] [Client thread/INFO]: [CHAT] §l10...
+[11:10:08] [Client thread/INFO]: [CHAT] §l9...
+[11:10:09] [Client thread/INFO]: [CHAT] §l8...
+[11:10:10] [Client thread/INFO]: [CHAT] §l7...
+[11:10:11] [Client thread/INFO]: [CHAT] §l6...
+[11:10:12] [Client thread/INFO]: [CHAT] §c§l5...
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT request state: IDLING
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT enter state: IDLING
+[11:10:13] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_QUIT
+[11:10:13] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_QUIT
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT request state: MISSION_ENDED
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT enter state: MISSION_ENDED
+[11:10:13] [Client thread/INFO]: [STDOUT]: Sending mission ended message to localhost:10326.
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_MISSION_END
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_MISSION_END
+[11:10:13] [Server thread/INFO]: [STDOUT]: SERVER request state: CLEAN_UP
+[11:10:13] [Server thread/INFO]: [STDOUT]: SERVER enter state: CLEAN_UP
+[11:10:13] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT request state: DORMANT
+[11:10:13] [Client thread/INFO]: [STDOUT]: CLIENT enter state: DORMANT
+[11:10:13] [Client thread/INFO]: [STDOUT]: JETTISONING 0 COMMANDS
+[11:10:14] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[11:11:19] [Client thread/INFO]: [STDOUT]: Toggling control between human and AI - now HUMAN
+[11:11:29] [Server thread/INFO]: Saving and pausing game...
+[11:11:29] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/Overworld
+[11:11:29] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/Nether
+[11:11:29] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/The End
+[11:11:30] [Server thread/INFO]: Stopping server
+[11:11:30] [Server thread/INFO]: Saving players
+[11:11:30] [Server thread/INFO]: The Hungry Caterpillar lost connection: TextComponent{text='Disconnected', siblings=[], style=Style{hasParent=false, color=null, bold=null, italic=null, underlined=null, obfuscated=null, clickEvent=null, hoverEvent=null, insertion=null}}
+[11:11:30] [Server thread/INFO]: The Hungry Caterpillar left the game
+[11:11:30] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[11:11:30] [Server thread/INFO]: Saving worlds
+[11:11:30] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/Overworld
+[11:11:30] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/Nether
+[11:11:30] [Server thread/INFO]: Saving chunks for level 'TEMP_10000_045d8bcb-3f2b-4b44-a423-3e757c0b10d2'/The End
+[11:11:38] [Client thread/INFO]: Stopping!
+[11:11:38] [Client thread/INFO]: SoundSystem shutting down...
+[11:11:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

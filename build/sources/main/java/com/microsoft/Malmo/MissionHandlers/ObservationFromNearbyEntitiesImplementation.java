@@ -126,7 +126,7 @@ public class ObservationFromNearbyEntitiesImplementation extends HandlerBase imp
                     String name = MinecraftTypeHelper.getUnlocalisedEntityName(e);
                     if (e instanceof EntityItem)
                     {
-                        ItemStack is = ((EntityItem)e).getEntityItem();
+                        ItemStack is = ((EntityItem)e).getItem();
                         DrawItem di = MinecraftTypeHelper.getDrawItemFromItemStack(is);
                         if (di != null)
                         {

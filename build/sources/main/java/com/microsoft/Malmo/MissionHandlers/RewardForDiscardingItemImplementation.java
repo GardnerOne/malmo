@@ -101,7 +101,7 @@ public class RewardForDiscardingItemImplementation extends RewardForItemBase imp
     {
         if (event.getEntityItem() != null && event.getPlayer() instanceof EntityPlayerMP)
         {
-            ItemStack stack = event.getEntityItem().getEntityItem();
+            ItemStack stack = event.getEntityItem().getItem();
             sendItemStackToClient((EntityPlayerMP)event.getPlayer(), MalmoMessageType.SERVER_DISCARDITEM, stack);
         }
     }

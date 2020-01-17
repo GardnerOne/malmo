@@ -205,8 +205,8 @@ public abstract class ObservationFromServer extends HandlerBase implements IMalm
         /** IMPORTANT: Call this from the onMessage method in the subclass. */
         public IMessage processMessage(ObservationRequestMessage message, MessageContext ctx)
         {
-            IThreadListener mainThread = (WorldServer) ctx.getServerHandler().playerEntity.world;
-            final EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+            IThreadListener mainThread = (WorldServer) ctx.getServerHandler().player.world;
+            final EntityPlayerMP player = ctx.getServerHandler().player;
             final ObservationRequestMessage mess = message;
             mainThread.addScheduledTask(new Runnable()
             {
